@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('brands', function (Blueprint $table) {
             $table->id();
             $table->string('brand');
-            $table->string('img_url');
+            $table->string('img_url')->nullable();
             $table->boolean('is_active')->default(true);
             $table->string('created_by');
             $table->string('updated_by');
