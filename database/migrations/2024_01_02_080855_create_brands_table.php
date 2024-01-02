@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('img_url')->nullable();
             $table->boolean('is_active')->default(true);
             $table->string('created_by');
-            $table->string('updated_by');
+            $table->string('updated_by')->nullable();
             $table->timestamps();
         });
     }
